@@ -1,0 +1,156 @@
+@import './base.css';
+
+#app {
+  height: 100%;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 8px 24px;
+  border-radius: 24px;
+  background: rgb(46,186,157);
+  background: linear-gradient(120deg, rgba(46,186,157,1) 0%, rgba(52,83,185,1) 100%);
+  border: 1px solid var(--color-background);
+  transition: border-color 0.18s;
+  color: #fafafa;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.form_container {
+
+  .form_label {
+    display: block;
+    color: #c3c3c3;
+    font-size: 12px;
+  }
+
+  input {
+    width: 100%;
+    background-color: #3b3b3b;
+    border: 2px solid #4d4d4d;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-bottom: 8px;
+    color: #fafafa;
+    transition: border-color 0.18s;
+
+    &:focus {
+      outline: none;
+      border-color: #636363;
+    }
+  }
+
+  span[role="alert"] {
+    display: block;
+    color: #e58686;
+    font-size: 12px;
+    margin-top: -6px;
+  }
+
+  .btn {
+    border-color: #3b3b3b;
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+}
+
+.preloader {
+  height: 24px;
+  width: 24px;
+  border: 3px solid rgba(240, 240, 240, 0.3);
+  border-top: 3px solid rgb(240, 240, 240);
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.password_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border-radius: 24px;
+  background-color: #3b3b3b;
+
+  p {
+    font-size: 14px;
+    color: #a0a0a0;
+  }
+
+  pre {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
